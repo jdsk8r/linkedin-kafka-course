@@ -14,7 +14,7 @@ class ProducerDemo {
     }
 
     fun run() {
-        log.info("Hello world!")
+        log.info("I am a Kafka producer!")
         val producer = KafkaProducer<String, String>(properties)
         val producerRecord = ProducerRecord<String, String>("demo_kotlin", "hello world")
         producer.send(producerRecord)

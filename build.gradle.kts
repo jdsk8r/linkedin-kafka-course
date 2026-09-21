@@ -22,7 +22,7 @@ kotlin {
 }
 
 application {
-    mainClass = "ProducerDemoKt"
+    mainClass = "ProducerDemoWithCallbackKt"
 }
 
 tasks.test {
