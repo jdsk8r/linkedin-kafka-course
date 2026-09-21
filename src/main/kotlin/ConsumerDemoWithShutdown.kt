@@ -36,7 +36,6 @@ class ConsumerDemoWithShutdown {
         try {
             consumer.subscribe(listOf(topic))
             while (true) {
-                log.info("Polling...")
                 val records = consumer.poll(Duration.ofMillis(1000))
                 for (record in records) {
                     log.info(
